@@ -7,7 +7,7 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "main": "dist/es/index.js",
+  "main": "dist/npm/index.js",
   "module": "dist/es/index.js",
   "rollup:bundle": "dist/es/index.bundle.js",
   "web": "dist/streaming-client.browser.js",
@@ -33,7 +33,7 @@
     "start:watch": "npm-watch build",
     "start:sync": "npm run build && npm run start:server",
     "start:server": "stupid-server -s",
-    "prepare":"npm run build"
+    "prepare":"npm run compile:module"
   },
   "watch": {
     "build": {
