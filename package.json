@@ -14,9 +14,6 @@
   "files": [
     "dist"
   ],
-  "pre-push": [
-    "test"
-  ],
   "types": "dist/es/index.d.ts",
   "scripts": {
     "prebuild": "rimraf dist",
