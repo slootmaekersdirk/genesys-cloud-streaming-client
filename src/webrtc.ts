@@ -836,7 +836,7 @@ export class WebrtcExtension
     return {
       on: this.on.bind(this),
       once: this.once.bind(this),
-      off: this.off.bind(this),
+      //DSL off: this.off.bind(this),
       removeAllListeners: this.removeAllListeners.bind(this),
       removeListener: this.removeListener.bind(this),
       refreshIceServers: this.refreshIceServers.bind(this),
