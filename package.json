@@ -33,7 +33,7 @@
     "start:watch": "npm-watch build",
     "start:sync": "npm run build && npm run start:server",
     "start:server": "stupid-server -s",
-    "prepare":"npm run compile:module"
+    "prepare":"npm run build"
   },
   "watch": {
     "build": {
