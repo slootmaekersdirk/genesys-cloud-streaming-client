@@ -219,8 +219,8 @@ export class WebrtcExtension
       delete this.pendingSessions[pendingSession.sessionId];
     }
 
-    const ignoreHostCandidatesForForceTurnFF =
-      this.getIceTransportPolicy() === "relay" && isFirefox;
+    const ignoreHostCandidatesForForceTurnFF = false;
+    // this.getIceTransportPolicy() === "relay" && isFirefox;
 
     const gcSessionOpts: IGenesysCloudMediaSessionParams = {
       options,
@@ -230,7 +230,7 @@ export class WebrtcExtension
       originalRoomJid: pendingSession?.originalRoomJid,
       sessionType: pendingSession?.sessionType,
       allowIPv6: this.config.allowIPv6,
-      ignoreHostCandidatesFromRemote: ignoreHostCandidatesForForceTurnFF,
+      ignoreHostCandidatesFromRemote: false,
     };
 
     const session = new GenesysCloudMediaSession(gcSessionOpts);
