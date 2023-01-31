@@ -13,7 +13,7 @@ import { Jingle } from "stanza";
 import { StatsEvent } from "webrtc-stats-gatherer";
 import throttle from "lodash.throttle";
 import JingleSession, { SessionOpts } from "stanza/jingle/Session";
-import { isFirefox } from "browserama";
+//import { isFirefox } from "browserama";
 
 import { definitions, Propose } from "./stanza-definitions/webrtc-signaling";
 import {
