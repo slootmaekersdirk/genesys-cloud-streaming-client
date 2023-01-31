@@ -7,10 +7,10 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "main": "dist/npm/index.js",
+  "main": "dist/es/index.js",
   "module": "dist/es/index.js",
   "rollup:bundle": "dist/es/index.bundle.js",
-  "web": "dist/streaming-client.browser.js",
+  "web": "dist/es/index.js",
   "files": [
     "dist"
   ],
