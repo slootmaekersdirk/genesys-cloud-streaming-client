@@ -836,7 +836,7 @@ export class WebrtcExtension
     return {
       on: this.on.bind(this),
       once: this.once.bind(this),
-      //DSL off: this.off.bind(this),
+      off: this.off.bind(this),
       removeAllListeners: this.removeAllListeners.bind(this),
       removeListener: this.removeListener.bind(this),
       refreshIceServers: this.refreshIceServers.bind(this),
@@ -856,7 +856,7 @@ export class WebrtcExtension
 export interface WebrtcExtensionAPI {
   on: (event: string, handler: (...args: any) => void) => void;
   once: (event: string, handler: (...args: any) => void) => void;
-  //DSL off: (event: string, handler: (...args: any) => void) => void;
+  off: (event: string, handler: (...args: any) => void) => void;
   removeAllListeners(event?: string | symbol): void;
   removeListener(
     event: string | symbol,
